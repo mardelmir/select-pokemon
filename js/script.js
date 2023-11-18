@@ -27,7 +27,7 @@ pokemonBoton.addEventListener("click", () => {
                 <div id="pokemon-info">
                     <img src="${data.sprites.front_default}" alt="${data.name}" />
                     <p id="nombre"> ${data.name} </p>
-                    <p id="tipo"><span>Tipos:</span> ${tipo.join(', ')}</p>
+                    <p id="tipo"><span>Tipo:</span> ${tipo.join(', ')}</p>
                     <p id="altura"><span> Altura:</span> ${data.height} </p>
                     <p id="peso"> <span>Peso: </span>${data.weight} </p>
                 </div>
@@ -35,9 +35,10 @@ pokemonBoton.addEventListener("click", () => {
             showpokemon.innerHTML= template
         })
         .catch(error => {
+            showpokemon.innerHTML = '';
             const errorMsg = document.createElement('p');
             errorMsg.textContent = 'No se puede mostrar la información'
-            pokemonBoton.insertAdjacentElement('afterend',errorMsg)
+            showpokemon.appendChild(errorMsg)
         })}
       
 

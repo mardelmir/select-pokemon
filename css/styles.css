@@ -47,40 +47,71 @@ table {
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align:center;
-    background-color: aqua;
+    background-color: rgb(167, 251, 251);
 }
 
 h1{
-    color: blue;
+    color: rgb(31, 152, 152);
     padding: 20px;
-    font-size: xx-large;
-
+    font-size: 35px;
 }
 
-img {
-    height: 250px;
-    width: 250px;
+
+#pokemon-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid rgb(31, 152, 152);
+    margin: 5px;
 }
+
+#get-pokemon {
+    padding: 5px;
+    border-radius: 5px;
+    
+    background-color: rgb(31, 152, 152);
+    color: white;
+    cursor: pointer;
+}
+
+
 .show {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     text-transform: capitalize;
+    margin-top: 20px;
 }
+
 #pokemon-info{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+    width: fit-content;
+    box-shadow: 1px 5px 15px -5px;
+    background-color: white;
+    border: .5px solid rgb(0, 0, 0);
+}
+
+img {
+    height: 250px;
+    width: 250px;
 }
 
 #nombre {
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 20px;
     padding: 10px;
+    background-color: rgb(207, 247, 247);
 }
 
 span {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 600;
+}
+
+#peso {
+    margin-bottom: 25px;
 }
