@@ -1,5 +1,4 @@
 const pokemonBoton = document.getElementById('get-pokemon')
-const pokemonValue = document.getElementById('pokemon-select').value
 const pokemonForm = document.querySelector(".pokemon-form")
 const showpokemon = document.createElement('div')
 showpokemon.classList.add("show");
@@ -7,8 +6,8 @@ pokemonForm.insertAdjacentElement('afterend', showpokemon);
 
 
 pokemonBoton.addEventListener("click", () => {
-    let poke = document.getElementById('pokemon-select').value;
-    let url = `https://pokeapi.co/api/v2/pokemon/${poke}`;
+    const poke = document.getElementById('pokemon-select').value;
+    const url = `https://pokeapi.co/api/v2/pokemon/${poke}`;
     showpokemon.innerHTML = '';
     return getpokemon(url);
   });
